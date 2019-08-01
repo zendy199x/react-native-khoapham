@@ -68,4 +68,137 @@
 //     default : console.log("Không có giá trị")
 //         return
 // }
+// Mảng : 
+// let numbers = [1,3,5,7,9,11]
+// for
+// let i = 0
+// for( ; i < numbers.length ; i++){
+//     console.log(numbers[i]);
+// }
+// for(let number of numbers){
+//     if(number === 5) return
+//     console.log(number)
+// }
+// so sánh
+// let a = "505"
+// let b = "505"  
+// if(a == b){
+//     console.log("Bằng nhau")
+// }else{
+//     console.log("Khác nhau")
+// }
+// Phương thức check type data
+// typeof
+// let a = 10
+// function a(){}
+// console.log(typeof a)
+// for in : duyệt key
+// let numbers = [1,2,3,4,5]
+// for(let value in numbers){
+//     console.log(value)
+// }
+// let index = 0
+// while(index < numbers.length){
+//     console.log(numbers[index])
+//     index++
+// }
+// let numbers = [1,2,3,4,5]
+// numbers.push(10)
+// numbers.pop()
+// numbers.shift()
+// numbers.unshift(0)
+// console.log(numbers)
+// 1 - 100 
+// + In số chẳn
+// + In số lẻ
+// + In số chia 3 dư 1
+// + In số chính phương
+// for(let i = 1 ; i <= 100 ; i++){
+//     if(i % 2 === 0) console.log(i)
+// }
+// for(let i = 1 ; i <= 100 ; i++){
+//     if(i % 2 === 1) console.log(i)
+// }
+// for(let i = 1 ; i <= 100 ; i++){
+//     if(i % 3 === 1) console.log(i)
+// }
+
+// 1 : function nhan tham so 1 function
+// function xulybaitoan(fn){
+//     fn()
+// }
+// 2 : Function nhan function return function
+//console.log()
+// xulybaitoan(console.log())
+// function xulybaitoan(fn){
+//     return fn(1)
+// }
+// xulybaitoan(console.log)
+// for(let i = 1 ; i <= 100 ; i++){
+//     if(Math.sqrt(value) % 1 == 0) return 
+// }
+// function xulybaitoan(fn){
+//     for(let i = 1 ; i <= 100 ; i++){
+//         const dk = fn(i) == true
+//         if(dk) console.log(i)
+//     }
+// }
+// xulybaitoan(function(value){
+//     if(Math.sqrt(value) % 1 == 0) return true
+// })
+// let mang = [1,2,3,4,5,6,7,8,9,10]
+// let mangmoi = mang.map(function(value){
+//     return value * 2
+// })
+// console.log(mangmoi)
+// function sumElement(array){
+//     let tong = 0;
+//     for(let value of array){
+//         tong += value
+//     }
+//     return tong
+// }
+// arraynumber = [1,2,3,4,5]
+// console.log(sumElement(arraynumber))
+const persons = [
+    {
+      name: "Angelina Jolie",
+      age: 80
+    },
+    {
+      name: "Eric Jones",
+      age: 2
+    },
+    {
+      name: "Paris Hilton",
+      age: 5
+    },
+    {
+      name: "Kayne West",
+      age: 16
+    },
+    {
+      name: "Bob Ziroll",
+      age: 100
+    }
+]
+function getAllName(array){
+    let arrayname = array.map(function(person){
+        return person.name
+    })
+    return arrayname
+}
+function average(array){
+    let arrayage = array.map(function(person){
+        return person.age
+    })
+    let sumage = 0
+    for(let value of arrayage){
+        sumage += value
+    }
+    return sumage / array.length
+}
+// console.log(getAllName(persons))
+console.log(average(persons));
+  
 
