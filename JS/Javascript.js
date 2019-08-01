@@ -59,12 +59,13 @@
 // }else{
 //     console.log("Sai")
 // }
-let a = true
-switch(a){
-    case true : console.log("đây là true")
-        return
-    case false : console.log("đây là false")
-        return
-    default : console.log("Không có giá trị")
-        return
-}
+// let a = true
+// switch(a){
+//     case true : console.log("đây là true")
+//         return
+//     case false : console.log("đây là false")
+//         return
+//     default : console.log("Không có giá trị")
+//         return
+// }
+
