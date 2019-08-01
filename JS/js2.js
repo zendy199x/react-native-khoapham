@@ -7,3 +7,12 @@
 // })
 // console.log(newNumbers);
 
+const animals = [
+    {name: 'Cat', age: 10},
+    {name: 'Mouse', age: 15},
+    {name: 'Dog', age: 20}
+]
+const newAnimals = animals.filter(function(animal) {
+    if(animals.age <= 10) return false
+        return true
+})
