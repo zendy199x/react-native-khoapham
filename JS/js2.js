@@ -62,8 +62,12 @@
 // const person1 = {name : "Nguyen Van A" , age : 20}
 // 2 : functional
 function Person(Name , Age){
-    this.name = Name
-    this.age = Age
+    this.name = name
+    this.age = age
+    this.infor = function() {
+        return `Teo : ${this.name}, Tuoi : ${this.age}`
+    }
 }
-const teo = new Person("Teo",10)
-console.log(teo.age)
+const teo = new Person('Teo', 10);
+console.log = teo.infor;
+console.log(tuoi.bind({name : 'Ti', age : 20})());
