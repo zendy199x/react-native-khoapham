@@ -6,7 +6,7 @@ export default class Design extends Component {
     render() {
         return (
             <View style={{flex : 10 ,flexDirection : "column"}}>
-                <View style={{flex : 1 , backgroundColor : "red" , flexDirection : "column"}}>
+                <View style={{flex : 1 , backgroundColor : "red" , flexDirection :"column"}}>
                     <View style={{flex :1 , backgroundColor : "red" , justifyContent : "center" , alignItems : "center"}}>
                         <Text>A</Text>
                     </View>
